@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h6 {
+            font-size: 15px;
+        }
+
+        .h2-text {
+            color: red
+        }
+
+        .h6-text{
+            color: yellow
+        }
+
+        #h1-text{
+            font-size: 50px;
+        }
+
+        input[type="text"]{
+            background-color: lightskyblue;
+        }
+
+        input[type="text"]:hover{
+            background-color: darkseagreen;
+        }
+
+        a:hover{
+            color: mediumvioletred;
+        }
+
+        li::marker{
+            color: mediumvioletred;
+        }
+
+        ul li:nth-child(2){
+            color: aqua;
+        }
+
+        ul li:nth-child(odd){
+            color: green;
+        }
+
+        div.nth p:nth-of-type(2){
+            color: mediumvioletred;
+        }
+    </style>
+</head>
+<body>
+<div class="python">
+    <h1 id="h1-text">H1 text</h1>
+    <h1>H1 text</h1>
+    <h2 class="h2-text">H2 text</h2>
+    <h6 class="h2-text h6-text">H6 text</h6>
+    <p></p>
+    <a href="https://playwrite.dev/python/" target="_blank">Python</a>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <ol>
+        <li>Text1</li>
+        <li>Text2</li>
+        <li>Text3</li>
+    </ol>
+
+    <form action="/action" method="POST">
+        <input type="text" value="123" placeholder="Text">
+        <input required type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <textarea required placeholder="Text">123</textarea>
+        <button type="submit" disabled>Ок</button>
+    </form>
+    <div class="nth">
+        <p>1</p>
+        <p>2</p>
+        <h6>3</h6>
+        <h5>4</h5>
+        <p>5</p>
+    </div>
+</div>
+<div>
+    <h2 class="h2-text">H2 text2</h2>
+</div>
+
+</body>
+</html>
