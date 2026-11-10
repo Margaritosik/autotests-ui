@@ -29,4 +29,5 @@ with sync_playwright() as playwright:
 
     expect(button_registration).to_be_enabled()
 
+
     page.wait_for_timeout(5000)
